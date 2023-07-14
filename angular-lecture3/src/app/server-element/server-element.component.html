@@ -1,10 +1,13 @@
 <div
   class="panel panel-default">
-  <div class="panel-heading">{{ element.name }}</div>
+  <!-- <div class="panel-heading">{{ element.name }}</div> -->
+  <div class="panel-heading">{{ name }}</div>
   <div class="panel-body">
+    <ng-content></ng-content>
+    <!-- ng-content로 대체되어 아래 블럭이 app.component.html로 이동
     <p>
       <strong *ngIf="element.type === 'server'" style="color: red">{{ element.content }}</strong>
       <em *ngIf="element.type === 'blueprint'">{{ element.content }}</em>
-    </p>
+    </p> -->
   </div>
 </div>
