@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-learn-app2';
+  leadedFeature = 'recipe';
+
+  onNavigate(feature: string) {
+    this.leadedFeature = feature;
+  }
 }
